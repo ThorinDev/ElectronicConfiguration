@@ -3,10 +3,8 @@ package com.thorindev;
 public class ElectronConfig {
 	
 	/**
-	 * @author thorindev
-	 * @since 2016
 	 * @param electron The amount of electrons in the atom that you want to find the electronic configuration for.
-	 * @return A String that will looks like "2.8.8" if your amount of electrons is 18
+	 * @Returns A String that will looks like "2.8.8" if your amount of electrons is 18
 	 */
 	public String electronicConfig(int electron) {
 		StringBuilder sb = new StringBuilder();
