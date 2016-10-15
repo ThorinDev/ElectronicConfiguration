@@ -6,7 +6,7 @@ public class ElectronConfig {
 	 * @param electron The amount of electrons in the atom that you want to find the electronic configuration for.
 	 * @Returns A String that will looks like "2.8.8" if your amount of electrons is 18
 	 */
-	public String electronicConfig(int electron) {
+	public static String electronicConfig(int electron) {
 		StringBuilder sb = new StringBuilder();
 		if(isNeg(electron) == false) {
 			int fsr = electron - 2;
@@ -34,7 +34,7 @@ public class ElectronConfig {
 		return sb.toString();
 	}
 	
-	public boolean isNeg(int n) {
+	public static boolean isNeg(int n) {
 		return (n < 0 || n == 0 ) ? true : false;
 	}
 
